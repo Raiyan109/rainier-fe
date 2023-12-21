@@ -4,8 +4,12 @@ import bloodSuger from '../assets/Icon_Blood_sugar.png'
 import bubble from '../assets/Icon_bubble.png'
 import bloodPressure from '../assets/Icon_Blood_pressure.png'
 import vector from '../assets/Vector.png'
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 
 const Hero = () => {
+    const lenis = useLenis(({ scroll }) => {
+        // called every scroll
+    })
     const cardsData = [
         {
             icon: heart,
@@ -34,7 +38,7 @@ const Hero = () => {
     ]
     return (
         <div>
-            <div className="hero-bg py-6 px-3 flex justify-between items-center rounded-lg">
+            <div className="hero-bg py-6 px-3 my-3 flex justify-between items-center rounded-lg">
                 <img src={heroImg} alt="" />
                 <div className='text-white space-y-4'>
                     <h1 className='text-2xl font-semibold'>Hello, Mary Jane!</h1>
@@ -58,6 +62,9 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
+            <ReactLenis root>
+                { /* content */}
+            </ReactLenis>
         </div>
     );
 };

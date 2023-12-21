@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Home = () => {
     return (
-        <div className="bg-gray-200 w-full  px-8 py-4">
+        <div className="bg-[#E0E0E0] w-full px-8 py-4 z-0">
             <Navbar />
             <Hero />
         </div>
