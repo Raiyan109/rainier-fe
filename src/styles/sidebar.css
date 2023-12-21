@@ -34,7 +34,8 @@
 .bars {
     display: flex;
     font-size: 25px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    z-index: 10;
 }
 
 .link {

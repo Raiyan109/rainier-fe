@@ -4,7 +4,7 @@ import downArrow from '../assets/Icon_downArrow.png'
 
 const Navbar = () => {
     return (
-        <div className="w-full flex justify-between px-3 py-4">
+        <div className="w-full flex justify-between">
             <h1 className="text-xl text-gray-500 font-medium"> Home</h1>
 
             <div className='flex justify-center items-center gap-4'>

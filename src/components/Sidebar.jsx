@@ -53,9 +53,9 @@ const Sidebar = ({ children }) => {
                             <h1 className="font-medium">Medi<span className="text-[#FF7594]">Doc</span></h1>
                         </div>
                     </div>
-                    <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars">
+                    <div style={{ marginLeft: isOpen ? "50px" : "-15px" }} className="bars">
                         {isOpen ?
-                            <p style={{ marginRight: '-45px' }}><img src={leftArrow} alt="" onClick={toggle}
+                            <p style={{ marginRight: '-50px' }}><img src={leftArrow} alt="" onClick={toggle}
                             /></p>
                             : <FaBars onClick={toggle} />}
                     </div>
