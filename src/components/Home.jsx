@@ -1,8 +1,9 @@
+import Navbar from "./Navbar";
 
 const Home = () => {
     return (
-        <div>
-
+        <div className="bg-gray-200 w-full">
+            <Navbar />
         </div>
     );
 };

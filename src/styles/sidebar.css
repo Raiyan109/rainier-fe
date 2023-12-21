@@ -1,28 +1,34 @@
-.container {
+.sidebar-container {
     display: flex;
+    width: 100%;
 }
 
-main {
+.main {
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .sidebar {
     background: #fefae0;
     /* color: #fff; */
     height: 100vh;
-    width: 200px;
+    /* width: 200px; */
     transition: all 0.5s;
 }
 
 .top_section {
     display: flex;
     align-items: center;
-    padding: 20px 15px;
+    justify-content: space-between;
+    padding: 25px 29px;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .bars {
@@ -34,6 +40,7 @@ main {
 .link {
     display: flex;
     /* color: #fff; */
+    align-items: center;
     padding: 10px 15px;
     gap: 15px;
     transition: all 0.5s;
@@ -50,7 +57,12 @@ main {
     color: #FF7594;
 }
 
-.icon,
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 .link_text {
     font-size: 20px;
 }
